@@ -1,0 +1,34 @@
+@media only screen and (min-width: 32.5rem) {
+
+    /* Menu */
+    
+    /*title*/
+
+    section.title .title__div {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    
+    section.title .title__network {
+      max-width: 90%;
+    }
+
+    section.title .title__profile {
+      width: 30vw;
+    }
+    
+    section.title .title__network , .title__network__item a{
+      color: var(--secondary-color);
+      font-size: .9em;
+    }
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Experiências acadêmicas*/
+    
+    /*Expeirência profissional*/
+    
+    }

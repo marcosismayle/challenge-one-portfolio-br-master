@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,51 +24,52 @@
 </head>
 <body>
     <!-- Sessão de Menu  -->
-    <div class="all">
-    <section class="menu">
-        <header>
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Fulana de Tal</h3>
-        </header>
+    <header>
         <nav>
+            <div class="menu">
+                <a href="index.html" class="home"><img src="assets/logo.png" alt="logo"></a>
+                <h1 class="menu__title">Marcos Ismayle</h1>
+                <div class="icons">
+                <i class="icon-menu"><span></span></i>
+                </div>
+            </div>
             <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="#contato">Contato@fulana.com</a></li>
+                <li class="menu__list__item"><a href="#sobremim" class="text-item">Sobre</a></li>
+                <li class="menu__list__item"><a href="#skills" class="text-item">Skills</a></li>
+                <li class="menu__list__item"><a href="#hobbies" class="text-item">Hobbies</a></li>
+                <li class="menu__list__item"><a href="#formacao" class="text-item">Formação</a></li>
+                <li class="menu__list__item"><a href="#xp" class="text-item">Experiência</a></li>
+                <li class="menu__list__item"><a href="#contato" class="text-item">Contato</a></li>
             </ul>
-            <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li>
         </nav>
-    </section>
+    </header>
 
 <!-- Sessão de Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
             <img class="title__profile" src="assets\profile.png">
-            <div class="title__container" id="#sobremim">
-                <h2 class="title__bio">Olá, meu nome é Fulana de Tal e construo páginas web</h2>
-                <h3 class="title__subsection">Eu sou formada em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
+            <div class="title__container" id="sobremim">
+                <h2 class="title__bio">Olá, meu nome é Marcos Ismayle e construo páginas web</h2>
+                <P class="title__subsection">Eu sou formado em Engenharia Civil e atualmente estou cursando Applied Technology, uma graduação em Desenvolvimento de Software na Brigham University - Idaho e para aperfeiçoar ainda mais minhas skills estou participando no projeto Oracle ONE na Alura.</P>
                 <ul class="title__network">
                     <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/marcosismayle" target="_blank">Github <img src="assets\arrow.png"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/marcosismayle" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/marcosismayle/" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="assets/curriculo-marcos-eng.pdf" target="_blank">Curriculo <img src="assets\arrow.png"></a></li>
                 </ul>
             </div>
         </div>
     </section>
 
         <!-- Sessão sobre mim -->
-    <section class="about">
+    <section class="aboutme">
         <div class="about__container">
             <h3 class="about__title">Sobre mim</h3>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets\signature.png">
+            <!-- Caso queira colocar sua própria assinatura, insira aqui! 
+            <img src="assets\signature.png">-->
         </div>
     </section>
 
@@ -282,7 +289,6 @@
         </section>
     </div>
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
+<script src="scripts/validate.js"></script>
 </body>
 </html>
-

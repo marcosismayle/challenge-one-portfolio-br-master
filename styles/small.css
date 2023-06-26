@@ -1,65 +1,283 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
 
-:root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+:root {
+  /* color palette */
+  --primary-color:#060606;
+  --secondary-color:#157380;
+  --accent2-color:#BAD8D1;
+  --accent3-color:#F5F1E3;
+
+  /* Font family */
+  --heading-font: "Playfair Display";
+  --paragraph-font: "Lato", Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #060606;  /* headlines on a white background */ 
+  --headline-color-on-color: #F5F1E3; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #060606; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #F5F1E3; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #BAD8D1  ;
+  --nav-link-color: #157380;
+  --nav-background-color: #f5f1e3;
+  --nav-hover-link-color: #157380;
 }
+
+/* Configurações Gerais */
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-ol, ul,li {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
+  overflow-x: hidden;
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
+p {
+  font-family: var(--paragraph-font);
+  margin: 1.5rem 1.5rem;
+}
 
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  margin: 1.5rem 1.5rem;
+}
 
 /*Sessão Menu*/
 
-section.menu{
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation */
+
+nav .menu {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.menu__title {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+}
+
+.menu__list {
+  display: none;
+}
+
+
+nav .menu .home:hover {
+  opacity: 0.5;
+}
+nav .menu .icons .icon-menu {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+nav .menu .icons .icon-menu span {
+  background-color: var(--secondary-color);
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.2s ease;
+  right: 0;
+  border-radius: 5px;
+}
+nav .menu .icons .icon-menu span:before, nav .menu .icons .icon-menu span:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+nav .menu .icons .icon-menu span:before {
+  transform: translateY(-10px);
+  transition: all 0.3s 0.1s ease;
+}
+nav .menu .icons .icon-menu span:after {
+  transform: translateY(10px);
+  transition: all 0.3s 0.2s ease;
+}
+nav .menu .icons .icon-menu:hover span {
+  width: 30px;
+}
+nav .menu .icons .icon-menu:hover span:before {
+  width: 25px;
+}
+nav .menu .icons .icon-menu:hover span:after {
+  width: 20px;
+}
+nav .menu .icons .icon-menu.icon-closed {
+  justify-content: center;
+}
+nav .menu .icons .icon-menu.icon-closed span {
+  justify-content: center;
+  width: 0;
+  right: initial;
+  transition: all 0.6s ease;
+}
+nav .menu .icons .icon-menu.icon-closed span:before, nav .menu .icons .icon-menu.icon-closed span:after {
+  width: 30px;
+  background-color: var(--secondary-color);
+}
+nav .menu .icons .icon-menu.icon-closed span:before {
+  transform: rotate(45deg);
+}
+nav .menu .icons .icon-menu.icon-closed span:after {
+  transform: rotate(-45deg);
+}
+nav .menu .icons .icon-menu.icon-closed:hover span {
+  width: 0;
+  opacity: 1;
+}
+nav .menu.open .menu__list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--paragraph-font);
+}
+nav .menu__list.open .menu__list__item:nth-child(1) {
+  animation-duration: 0.6s;
+}
+nav .menu__list.open .menu__list__item:nth-child(2) {
+  animation-duration: 0.8s;
+}
+nav .menu__list.open .menu__list__item:nth-child(3) {
+  animation-duration: 1s;
+}
+nav .menu__list.open .menu__list__item:nth-child(4) {
+  animation-duration: 1.2s;
+}
+
+nav .menu__list.open .menu__list__item:nth-child(5) {
+  animation-duration: 1.4s;
+}
+
+nav .menu__list.open .menu__list__item:nth-child(6) {
+  animation-duration: 1.6s;
+}
+
+nav .menu__list.open .menu__list__item .text-item {
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--heading-font);
+  font-size: 20px;
+}
+
+nav .menu__list.open .menu__list__item:hover .text-item {
+  width: 100%;
+  opacity: 0.3;
+}
+
+nav .menu__list.open {
+  display: flex;
+  z-index: 3;
+  overflow: hidden;
+}
+
+nav .menu__list.open .menu__list__item {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: menu-mobile 0.6s ease forwards;
+  transform: translatey(0%);
+}
+@keyframes menu-mobile {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+nav .menu__list.open {
+  height: 60vh;
+  flex-direction: column;
+}
+
+nav .menu__list.close .menu__list__item {
+  animation: menu-close 1s ease forwards;
+}
+@keyframes menu-close {
+  0% {
+    height: 10vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+nav .menu__list.close .menu__list__item .text-item {
+  animation: text-out 0.6s ease forwards;
+}
+@keyframes text-out {
+  0% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*Sessão Title*/
 
-section.title{
+section.title .title__profile {
+  width: 40vw;
+  margin: 1.5rem;
+}
 
+section.title .title__network {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+  margin: 1.5rem 1.5rem;
+}
+
+section.title .title__network , .title__network__item a{
+  color: var(--secondary-color);
+  font-size: .9em;
 }
 
 /*Sessão About*/
 
-section.about{
+section.aboutme{
+  background-color: var(--secondary-color);
+}
 
+section.aboutme .about__container{
+  padding: 1em;
+  color: var(--paragraph-color-on-color);
 }
 
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
 }
 
 /* Experiência Acadêmica*/
@@ -86,45 +304,4 @@ section.footer{
    
 }
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
 
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
-}
