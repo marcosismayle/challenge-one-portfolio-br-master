@@ -39,6 +39,13 @@
     }
     
     /*Experiências acadêmicas*/
+
+    section.academic .academic__courses {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     
     /*Expeirência profissional*/
     

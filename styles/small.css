@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 
 :root {
   /* color palette */
@@ -8,8 +8,8 @@
   --accent2-color:#ffffff;
 
   /* Font family */
-  --heading-font: "Playfair Display";
-  --paragraph-font: "Lato", Helvetica, sans-serif;
+  --heading-font: 'Roboto Slab', serif;
+  --paragraph-font: 'Roboto', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #060606;  /* headlines on a white background */ 
@@ -265,6 +265,11 @@ section.title .title__network , .title__network__item a{
   font-size: .9em;
 }
 
+section.title .title__network__item:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
 /*Sessão About*/
 
 section.aboutme{
@@ -282,6 +287,7 @@ section.skills, section.hobbies {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: var(--paragraph-font);
 }
 
 section.skills .skills__line, .hobbies__line {
@@ -314,26 +320,34 @@ section.academic {
   background-color: var(--secondary-color);  
   margin-top: 3em;
   padding-bottom: 2em;
+  color: var(--accent1-color);
 }
 
-section.academic .academic__courses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section.academic .academic__courses__item__img {
+section.academic .academic__courses__item__img a{
   display: flex;
   align-items: center;
   background-color: var(--accent2-color);
-  width: 80vw;
-  height: 60vw;
+  width: 15rem;
+  height: 10rem;
   margin: .3em;
   margin-top: 1em;
 }
 
-section.academic .academic__courses__item__img img{
+section.academic .academic__courses__item__img:hover {
+  transform: scale(1.05);
+  opacity: 0.5;
+}
+
+section.academic .academic__courses__item__title:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+section.academic .academic__courses__item__img img:nth-child(1){
+  width: 10rem;
+}
+
+section.academic .academic__courses__item__img img {
   margin: 1em auto;
 }
 
@@ -345,8 +359,20 @@ section.experience{
 
 /*Contato*/
 
-section.formcontato{
+section.formcontato .formcontato__img {
+  display: none;
+}
 
+section.formcontato{
+  background-color: var(--secondary-color);
+  padding: 1em;
+  margin-top: 2em;
+  color: var(--accent2-color);
+}
+
+section.formcontato .formcontato__form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*footeer*/

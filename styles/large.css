@@ -63,7 +63,7 @@
     
     section.title .title__network {
         max-width: 60%;
-      }
+    }
     
     /*Sessão sobre*/
     
@@ -75,7 +75,11 @@
     
     /*Experiência Profissional*/
     
-     /*Contato*/
+    /*Contato*/
+
+    section.formcontato .formcontato__img {
+        display: unset;
+    }
     
     /*Footer*/
     
