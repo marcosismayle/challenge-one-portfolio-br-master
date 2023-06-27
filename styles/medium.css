@@ -22,10 +22,21 @@
       color: var(--secondary-color);
       font-size: .9em;
     }
+
+    /*About me*/
+
+    section.aboutme .about__container {
+      max-width: 95vh;
+    }
     
-    /*Skills*/
-    
-    /*Hobbies*/
+    /* Skills/ Hobbies */
+
+    section.skills .skills__box, .hobbies__box {
+      width: 25vw;
+      max-width: 25vh;
+      height: 15vw;
+      max-height: 20vh;
+    }
     
     /*Experiências acadêmicas*/
     

@@ -4,8 +4,8 @@
   /* color palette */
   --primary-color:#060606;
   --secondary-color:#157380;
-  --accent2-color:#BAD8D1;
-  --accent3-color:#F5F1E3;
+  --accent1-color:#F5F5F5;
+  --accent2-color:#ffffff;
 
   /* Font family */
   --heading-font: "Playfair Display";
@@ -26,6 +26,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: var(--accent1-color);
 }
 
 p {
@@ -68,8 +69,8 @@ nav .menu {
 .menu__title {
   font-family: var(--heading-font);
   color: var(--secondary-color);
-  font-size: 1.3rem;
-  letter-spacing: 4px;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
 .menu__list {
@@ -275,15 +276,65 @@ section.aboutme .about__container{
   color: var(--paragraph-color-on-color);
 }
 
-/*Sessão Hobbies*/
+/* Sessão Skills/Hobbies */
 
-section.hobbies{
+section.skills, section.hobbies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.skills .skills__line, .hobbies__line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.skills .skills__box, .hobbies__box {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent2-color);
+  width: 40vw;
+  height: 30vw;
+  margin: .3em;
+  margin-top: 1em;
+}
+
+section.skills li, .hobbies__box li {
+  margin-left: 1em;
 }
 
 /* Experiência Acadêmica*/
 
-section.academic{
+section.academic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);  
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
 
+section.academic .academic__courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.academic .academic__courses__item__img {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent2-color);
+  width: 80vw;
+  height: 60vw;
+  margin: .3em;
+  margin-top: 1em;
+}
+
+section.academic .academic__courses__item__img img{
+  margin: 1em auto;
 }
 
 /* experiência*/
