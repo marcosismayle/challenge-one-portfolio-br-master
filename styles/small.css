@@ -31,13 +31,11 @@ body {
 
 p {
   font-family: var(--paragraph-font);
-  margin: 1.5rem 1.5rem;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: var(--heading-font);
   font-weight: 500;
-  margin: 1.5rem 1.5rem;
 }
 
 /*Sessão Menu*/
@@ -253,6 +251,10 @@ section.title .title__profile {
   margin: 1.5rem;
 }
 
+section.title p, section.title h2 {
+  margin: 1.5rem;
+}
+
 section.title .title__network {
   display: flex;
   justify-content: space-around;
@@ -278,7 +280,7 @@ section.aboutme{
 }
 
 section.aboutme .about__container{
-  padding: 1em;
+  padding: 1.5em;
   color: var(--paragraph-color-on-color);
 }
 
@@ -361,34 +363,46 @@ div.experience__grid {
 */
 
 
+section.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 section.experience .experience__section__title h2 {
   margin: 0 auto;
 }
 
 div.experience__grid section {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--accent2-color);
   box-shadow: 5px 5px 10px #6f7364;
   transition: transform 0.2s;
+  height: fit-content;
   max-width: 400px;
-  height: 450px;
+  min-width: 250px;
+  margin: 1em auto 1em;
 }
 
 div.experience__grid section:hover {
   transform: scale(1.05);
 }
 
-div.experience__grid img {
-  width: 100%;
+div.experience__grid h2 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-div.experience__grid h2 {
-  font-size: 1rem;
-  font-weight: 600;
+div.experience__grid p {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 div.experience__grid .button-container {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,7 +413,8 @@ div.experience__grid .repoBtn, .demoBtn {
   font-family: var(--paragraph-font);
   border: #157380 solid 1px;
   padding: .7em;
-  width: 120px;
+  width: 40rem;
+  max-width: 100px;
 }
 
 div.experience__grid .repoBtn {
