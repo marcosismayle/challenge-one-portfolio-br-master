@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const urlData = "/projects.json";
+    const urlData = "https://marcosismayle.github.io/challenge-one-portfolio-br-master/projects.json";
   
     async function getProjectData(urlData) {
       const response = await fetch(urlData);
