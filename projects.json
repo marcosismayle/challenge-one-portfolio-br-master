@@ -17,9 +17,30 @@
       {
         "name": "Câmara de Comércio Website",
         "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
-        "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
-        "imageurl": "/assets/chamber-of-commerce-website.jpg",
-        "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
+        "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson7",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/lazy-load.jpg",
+        "demourl": "https://marcosismayle.github.io/wdd230/lesson7/lazyload.html"
+      },
+      {
+        "name": "Câmara de Comércio Website",
+        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson8",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/table.jpg",
+        "demourl": "https://marcosismayle.github.io/wdd230/lesson8/tablebuild.html"
+      },
+      {
+        "name": "Câmara de Comércio Website",
+        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson9",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/working-with-json.jpg",
+        "demourl": "https://marcosismayle.github.io/wdd230/lesson9/prophets.html"
+      },
+      {
+        "name": "Câmara de Comércio Website",
+        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson10",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/weather-api.jpg",
+        "demourl": "https://marcosismayle.github.io/wdd230/lesson10/weather-api.html"
       }
       
     ]
