@@ -371,6 +371,7 @@ div.experience__grid section {
   box-shadow: 5px 5px 10px #6f7364;
   transition: transform 0.2s;
   max-width: 400px;
+  height: 450px;
 }
 
 div.experience__grid section:hover {
