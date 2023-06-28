@@ -36,6 +36,7 @@ p {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--heading-font);
+  font-weight: 500;
   margin: 1.5rem 1.5rem;
 }
 
@@ -352,9 +353,63 @@ section.academic .academic__courses__item__img img {
 }
 
 /* experiência*/
+/*
+div.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+*/
 
-section.experience{
 
+section.experience .experience__section__title h2 {
+  margin: 0 auto;
+}
+
+div.experience__grid section {
+  margin: 1rem;
+  background-color: var(--accent2-color);
+  box-shadow: 5px 5px 10px #6f7364;
+  transition: transform 0.2s;
+  max-width: 400px;
+}
+
+div.experience__grid section:hover {
+  transform: scale(1.05);
+}
+
+div.experience__grid img {
+  width: 100%;
+}
+
+div.experience__grid h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+div.experience__grid .button-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+div.experience__grid .repoBtn, .demoBtn {
+  font-family: var(--paragraph-font);
+  border: #157380 solid 1px;
+  padding: .7em;
+  width: 120px;
+}
+
+div.experience__grid .repoBtn {
+  background-color: var(--accent2-color);
+  margin-right: 1em;
+  color: var(--secondary-color);
+}
+
+div.experience__grid .demoBtn {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
 }
 
 /*Contato*/
