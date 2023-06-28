@@ -4,14 +4,14 @@
         "name": "Câmara de Comércio Website",
         "description": "Website para câmara de comércio fictícia da cidade de Campinas. Projeto desenvolvido durante disciplina Web Frontend Development I. Projeto desenvolvido exclusivamente em HTML, CSS e JavaScript. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
-        "imageurl": "/assets/chamber-of-commerce-website.jpg",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/chamber-of-commerce-website.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
       },
       {
         "name": "To do list",
         "description": "Uma to do list para treinar JavaScript e manipulação do DOM.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson5/scripture-study-list",
-        "imageurl": "/assets/todo-list.jpg",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/todo-list.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson5/scripture-study-list/study-list.html"
       },
       {
