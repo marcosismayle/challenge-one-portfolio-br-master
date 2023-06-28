@@ -2,7 +2,7 @@
     "projects": [
       {
         "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. Projeto desenvolvido durante disciplina Web Frontend Development I. Projeto desenvolvido exclusivamente em HTML, CSS e JavaScript. ",
+        "description": "Website para câmara de comércio fictícia da cidade de Campinas.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
         "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/chamber-of-commerce-website.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
@@ -16,7 +16,7 @@
       },
       {
         "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. Projeto desenvolvido durante disciplina Web Frontend Development I. Projeto desenvolvido exclusivamente em HTML, CSS e JavaScript. ",
+        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
         "imageurl": "/assets/chamber-of-commerce-website.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
