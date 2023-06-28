@@ -15,29 +15,29 @@
         "demourl": "https://marcosismayle.github.io/wdd230/lesson5/scripture-study-list/study-list.html"
       },
       {
-        "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "name": "Praticando Lazy Load",
+        "description": "Pequeno projeto para praticar carregamento de imagens em lazy load. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson7",
         "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/lazy-load.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson7/lazyload.html"
       },
       {
-        "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "name": "Table Build",
+        "description": "Pequeno projeto para praticar tabelas. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson8",
         "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/table.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson8/tablebuild.html"
       },
       {
-        "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "name": "Working with JSON file e Fetch API",
+        "description": "Projeto utiliza-se de um arquivo JSON para carregar informações. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson9",
         "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/working-with-json.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson9/prophets.html"
       },
       {
-        "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas. ",
+        "name": "Weather API",
+        "description": "Praticando o uso de API, carrega informações de clima de uma API externa. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson10",
         "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/weather-api.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson10/weather-api.html"
