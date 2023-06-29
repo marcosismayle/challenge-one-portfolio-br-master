@@ -1,35 +1,54 @@
 //Seu JavaScript de validação aqui
 
-var iconMenu = document.querySelector('.icon-menu'),
-    menu = document.querySelector('.menu__list'),
-    menuLink = document.querySelectorAll('.menu-link');
+const camposDoFormulario = document.querySelectorAll('[required]')
 
-iconMenu.addEventListener('click', openMenu);
+camposDoFormulario.forEach((campo) => {
+    campo.addEventListener("blur", () => verificaCampo(campo));
+    campo.addEventListener("invalid", evento => evento.preventDefault())
+})
 
-menuLink.forEach(function(el) {
-  el.addEventListener('click', openSubmenu);
-});
+const tiposDeErro = [
+    'valueMissing',
+    'typeMismatch',
+    'tooShort',
+    'customError'
+]
 
-function openMenu() {
-  
-  if(menu.classList.contains('open')) {
-    menu.classList.add('close');
-    iconMenu.classList.remove('icon-closed');
-    
-    setTimeout(function(){ menu.classList.remove('open'); }, 1300);
-    
-  } else {
-    menu.classList.remove('close');
-    menu.classList.add('open');
-    iconMenu.classList.add('icon-closed');
-  } 
+const mensagens = {
+    nome: {
+        valueMissing: "O campo de nome não pode estar vazio.",
+        patternMismatch: "Por favor, preencha um nome válido.",
+        tooShort: "Por favor, preencha um nome válido."
+    },
+    email: {
+        valueMissing: "O campo de e-mail não pode estar vazio.",
+        typeMismatch: "Por favor, preencha um email válido.",
+        tooShort: "Por favor, preencha um email válido."
+    }
 }
 
-function openSubmenu(event) {
-  
-if (event.currentTarget.classList.contains("active")) {
-    event.currentTarget.classList.remove("active");
+function verificaCampo(campo) {
+  const mensagemErro = campo.nextElementSibling;
+  const validadorDeInput = campo.checkValidity();
+
+  if (!validadorDeInput) {
+    mensagemErro.textContent = mensagemDeErro(campo);
   } else {
-    event.currentTarget.classList.add("active");
+    mensagemErro.textContent = '';
   }
 }
+
+const formulario = document.querySelector('[data-formulario]');
+
+formulario.addEventListener("submit", (e) => {
+   e.preventDefault();
+
+   const listaRespostas = {
+       "nome": e.target.elements["nome"].value,
+       "email": e.target.elements["email"].value
+  }
+
+  localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+
+    window.location.href = "./abrir-conta-form-2.html";
+})

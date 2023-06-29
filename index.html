@@ -215,11 +215,16 @@
                 <p class="formcontato__subtext">Quer entrar em contato comigo?</p>
                 <p class="formcontato__subtext">Preencha o formulário a baixo e entrarei em contato o mais rápido possível. </p>
                 <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required>
+                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome" minlength="3" maxlength="50" required>
+                    <span class="mensagem-erro"></span>
                     <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
+                    <span class="mensagem-erro"></span>
                     <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea required>
-                    <button class="formcontato__botao">Enviar mensagem</button>
+                    <span class="mensagem-erro"></span>
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <span class="mensagem-erro"></span>
+                    <button class="formcontato__botao" value="avançar" type="submit">Enviar mensagem</button>
+                    <span class="mensagem-erro"></span>
                 </form>
             </div>
         </div>
@@ -250,6 +255,7 @@
         </footer>
     <!-- Script Linkado do seu documento de JavaScript -->
 <script src="scripts/validate.js"></script>
+<script src="scripts/menu.js"></script>
 <script src="scripts/experience.js"></script>
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/owl.carousel.min.js"></script>
