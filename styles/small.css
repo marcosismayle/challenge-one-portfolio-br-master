@@ -355,13 +355,6 @@ section.academic .academic__courses__item__img img {
 }
 
 /* experiência*/
-/*
-div.experience__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-*/
-
 
 section.experience {
   display: flex;
@@ -441,15 +434,78 @@ section.formcontato{
   color: var(--accent2-color);
 }
 
+section.formcontato .formcontato__text {
+  align-items: center;
+  justify-content: center;
+}
+
+.formcontato__input {
+  border: none;
+  background-color: var(--accent2-color);
+  margin-bottom: .5rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.formcontato__textarea {
+  height: 30vh;
+  border-radius: 5px;
+}
+
 section.formcontato .formcontato__form {
   display: flex;
   flex-direction: column;
 }
 
+section.formcontato .formcontato__botao {
+  font-family: var(--paragraph-font);
+  border: #157380 solid 1px;
+  padding: .7em;
+  background-color: var(--accent2-color);
+  margin:0 auto;
+  margin-top: 1em;
+  color: var(--secondary-color);
+}
+
 /*footeer*/
 
-section.footer{
-   
+footer {
+  padding: 1em;
+  text-align: center;
+  background-color: var(--accent2-color);
+}
+
+footer div {
+  padding: 1em;
+}
+
+footer p {
+  font-family: var(--paragraph-font);
+  padding: .5em;
+}
+
+footer .logo{
+  margin: 0 auto;
+  width: 100px;
+}
+
+footer a {
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div:nth-child(3) {
+  display: flex;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 0;
+  color: var(--paragraph-color-on-color);
+  font-size: .7em;
+  justify-content: center;
 }
 
 

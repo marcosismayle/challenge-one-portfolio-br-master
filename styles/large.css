@@ -79,7 +79,14 @@
 
     section.formcontato .formcontato__img {
         display: unset;
+        margin: 2em;
+        width: 430px;
     }
+      
+      section.formcontato .formcontato__contacto{
+        display: flex;
+        padding: 4em;
+      }
     
     /*Footer*/
     
