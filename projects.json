@@ -8,6 +8,13 @@
         "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
       },
       {
+        "name": "Bountiful Foods Website",
+        "description": "Website para uma loja de bebidas saudáveis fictícia.",
+        "repo": "https://github.com/marcosismayle/wdd230/tree/main/bountiful-foods",
+        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/bountiful-foods.jpg",
+        "demourl": "https://marcosismayle.github.io/wdd230/bountiful-foods/"
+      },
+      {
         "name": "To do list",
         "description": "Uma to do list para treinar JavaScript e manipulação do DOM.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson5/scripture-study-list",
