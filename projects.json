@@ -4,49 +4,49 @@
         "name": "Câmara de Comércio Website",
         "description": "Website para câmara de comércio fictícia da cidade de Campinas.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/chamber-of-commerce-website.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/chamber-of-commerce-website.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
       },
       {
         "name": "Bountiful Foods Website",
         "description": "Website para uma loja de bebidas saudáveis fictícia.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/bountiful-foods",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/bountiful-foods.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/bountiful-foods.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/bountiful-foods/"
       },
       {
         "name": "To do list",
         "description": "Uma to do list para treinar JavaScript e manipulação do DOM.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson5/scripture-study-list",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/todo-list.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/todo-list.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson5/scripture-study-list/study-list.html"
       },
       {
         "name": "Praticando Lazy Load",
         "description": "Pequeno projeto para praticar carregamento de imagens em lazy load. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson7",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/lazy-load.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/lazy-load.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson7/lazyload.html"
       },
       {
         "name": "Table Build",
         "description": "Pequeno projeto para praticar tabelas. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson8",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/table.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/table.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson8/tablebuild.html"
       },
       {
         "name": "Working with JSON file e Fetch API",
         "description": "Projeto utiliza-se de um arquivo JSON para carregar informações. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson9",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/working-with-json.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/working-with-json.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson9/prophets.html"
       },
       {
         "name": "Weather API",
         "description": "Praticando o uso de API, carrega informações de clima de uma API externa. ",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/lesson10",
-        "imageurl": "https://marcosismayle.github.io/challenge-one-portfolio-br-master/assets/weather-api.jpg",
+        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/weather-api.jpg",
         "demourl": "https://marcosismayle.github.io/wdd230/lesson10/weather-api.html"
       }
       
