@@ -1,13 +1,6 @@
 {
     "projects": [
       {
-        "name": "Câmara de Comércio Website",
-        "description": "Website para câmara de comércio fictícia da cidade de Campinas.",
-        "repo": "https://github.com/marcosismayle/wdd230/tree/main/chamber",
-        "imageurl": "https://marcosismayle.github.io/my_portfolio/assets/chamber-of-commerce-website.jpg",
-        "demourl": "https://marcosismayle.github.io/wdd230/chamber/index.html"
-      },
-      {
         "name": "Bountiful Foods Website",
         "description": "Website para uma loja de bebidas saudáveis fictícia.",
         "repo": "https://github.com/marcosismayle/wdd230/tree/main/bountiful-foods",
